@@ -9,28 +9,34 @@
       div[name="name2"] {
         background: orange;
       }
+
       /* 속성 안의 값이 특정 값을 단어(띄어쓰기 단위)로 포함 */
       div[name~="name1"] {
         background: yellow;
       }
+
       /* 속성 안의 값이 특정 값과 일치하거나 '-' 문자가 뒤에 
             작성된 요소 선택
         */
       div[class|="class"] {
         background: cyan;
       }
+
       /* 속성 값을 가지고 있으며, 접두사로 특정 값이 포함되는 요소 선택 */
       div[name^="name"] {
         background: blue;
       }
+
       /* 속성 안의 값이 특정 값으로 끝나는 요소 선택  */
       div[class$="class"] {
         color: white;
       }
+
       /* 속성 안의 값이 특정 값을 포함하는 요소 선택 */
       div[class*="div"] {
-        background: yellow;
+        background: green;
       }
+
       /* 자손 선택자 */
       #test1 > h4 {
         background: hotpink;
@@ -45,7 +51,7 @@
         background: gray;
       }
       /* #test1 ul>li{color:white;} */
-      /* 동일 선택자를 다시 작생도 문제 없다. */
+      /* 동일 선택자를 다시 작성해도 문제 없다. */
       #test1 ul {
         color: white;
       }
