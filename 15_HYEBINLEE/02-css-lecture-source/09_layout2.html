@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여백 관련 속성</title>
+    <style>
+        .test {
+            width: 100px;
+            height: 100px;
+            background-color: lightgray;
+            border: 1px solid black;
+        }
+
+        .test1 {
+            padding: 100px 90px 80px 70px; /* padding top, right, bottom, left */
+            background-color: lightblue;
+        }
+
+        .test2 {
+            padding: 50px 100px 150px 200px; /* top, right, bottom, left */
+            background-color: lightgreen;
+        }
+
+        .test3 {
+            margin: 50px 100px 80px 60px; /* margin top, right, bottom, left */
+            background-color: lightcoral;
+        }
+
+        .test4 {
+            padding: 50px; /* padding */
+            margin-top: 50px; /* margin top */
+            margin-left: 50px; /* margin left */
+            background-color: lightgoldenrodyellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>여백 관련 속성</h1>
+    <h4>기준 div</h4>
+    <div class="test"></div>
+
+    <h4>padding</h4>
+    <h5>테두리와 컨텐츠 영역 사이의 거리를 조절하는 속성</h5>
+    <pre>padding: 100px 90px 80px 70px;</pre>
+    <div class="test test1">콘텐츠 영역</div>
+
+    <h5>padding의 각 방향을 개별적으로 설정</h5>
+    <pre>padding-top: 50px; padding-left: 100px;</pre>
+    <div class="test test2">콘텐츠 영역</div>
+
+    <h3>margin</h3>
+    <h4>box 레벨이나 inline 레벨의 요소</h4>
+    <pre>margin: 50px 100px 80px 60px;</pre>
+    <div class="test test3">콘텐츠 영역</div>
+
+    <h3>padding과 margin의 조합</h3>
+    <h4>padding과 margin을 함께 사용하는 예시</h4>
+    <pre>padding: 50px; margin-top: 50px; margin-left: 50px;</pre>
+    <div class="test test4">콘텐츠 영역</div>
+</body>
+</html>
